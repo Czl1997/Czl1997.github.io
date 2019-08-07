@@ -173,39 +173,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="本文章基于B站视频"><a href="#本文章基于B站视频" class="headerlink" title="本文章基于B站视频"></a>本文章基于<a href="https://www.bilibili.com/video/av44544186?from=search&seid=1621519341015391579" target="_blank" rel="noopener">B站视频</a></h3><h3 id="特别感谢up主-CodeSheep"><a href="#特别感谢up主-CodeSheep" class="headerlink" title="特别感谢up主 CodeSheep"></a>特别感谢up主 <a href="https://space.bilibili.com/384068749" target="_blank" rel="noopener">CodeSheep</a></h3><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</p>
-<h3 id="01-工具准备-WIN10环境"><a href="#01-工具准备-WIN10环境" class="headerlink" title="01 工具准备(WIN10环境)"></a>01 工具准备(WIN10环境)</h3><h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></h4><p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qdd4s69yj20i7077dg2.jpg" alt></p>
-<p>安装步骤非常简单，一直next，下一步就可以了，默认安装就行。<br>安装完成后，用cmd进行检验是否安装成功</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
-<div><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qdfbc2h6j207g0140lm.jpg"><div>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<div><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qdfqr79pj206b0180lh.jpg"><div>
-结果如下图，出现版本号则安装成功。（npm是node.js的包管理工具，安装Node时会绑定安装）
-
-
-
-<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a></h4><p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qepogakhj20jl07wdh6.jpg" alt></p>
-<p>安装步骤也是一直next，安装到默认位置。</p>
-<p>安装完成后，在开始菜单中可以看到<br><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qf29nhhfj206x02x74k.jpg" alt></p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><h4 id="1-首先在选定目录下创建自己的Blog文件夹-用于保存自己的blog文件"><a href="#1-首先在选定目录下创建自己的Blog文件夹-用于保存自己的blog文件" class="headerlink" title="1.首先在选定目录下创建自己的Blog文件夹(用于保存自己的blog文件)"></a>1.首先在选定目录下创建自己的Blog文件夹(用于保存自己的blog文件)</h4><p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qfayen61j20in02f3ye.jpg" alt></p>
-<h4 id="2-进入Blog文件夹，右键Git-Bash-Here-文件夹初始是空的"><a href="#2-进入Blog文件夹，右键Git-Bash-Here-文件夹初始是空的" class="headerlink" title="2.进入Blog文件夹，右键Git Bash Here(文件夹初始是空的)"></a>2.进入Blog文件夹，右键Git Bash Here(文件夹初始是空的)</h4><p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qfirtaffj20di0cb3yy.jpg" alt></p>
-<h4 id="3-安装个cnpm的淘宝镜像提高速度，以后下载什么东西都用cnpm"><a href="#3-安装个cnpm的淘宝镜像提高速度，以后下载什么东西都用cnpm" class="headerlink" title="3.安装个cnpm的淘宝镜像提高速度，以后下载什么东西都用cnpm"></a>3.安装个cnpm的淘宝镜像提高速度，以后下载什么东西都用cnpm</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qfhc3ecyj20fx0563yj.jpg" alt></p>
-<p>测试代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qflbpn4oj20fm0fmjs1.jpg" alt></p>
-<h4 id="以上都完成后，安装Hexo"><a href="#以上都完成后，安装Hexo" class="headerlink" title="以上都完成后，安装Hexo"></a>以上都完成后，安装Hexo</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qfph20fkj20fm0hyt9y.jpg" alt></p>
-<p>验证安装是否成功</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://ww1.sinaimg.cn/large/ac4bedc6gy1g5qfq3jaczj20fj07nmx8.jpg" alt></p>
-</div></div></div></div>
+        
       
 
       
